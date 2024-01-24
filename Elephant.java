@@ -107,7 +107,10 @@ public class Elephant extends Actor
         if(isTouching(Asteroid.class))
         {
             MyWorld world = (MyWorld) getWorld();
-            world.gameOver();
+            Gamerover gg = new Gamerover();
+            Greenfoot.setWorld(gg);
+
+        
         }
         
     }
